@@ -1,0 +1,37 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Office: archivos temporales de bloqueo
+~$*
+
+# Credenciales y configuración local
+.env
+*.env
+**/hop-config.local.json
+etl/apache-hop/metadata/rdbms/*local*
+
+# Apache Hop: auditoría y logs locales
+etl/apache-hop/audit/
+*.log
+
+# Tableau: extractos y respaldos locales
+*.hyper
+*.tde
+*.twbr
+Bookmarks/
+Logs/
+
+# Python
+__pycache__/
+.venv/
+venv/
+
+# Datos pesados (compartir por drive)
+data/raw/*.zip
