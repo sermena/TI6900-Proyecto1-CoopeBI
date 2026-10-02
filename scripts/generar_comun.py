@@ -7,7 +7,7 @@ from datetime import date
 from pathlib import Path
 
 # Carpeta donde se guardan los archivos .sql generados
-CARPETA_SALIDA = Path(__file__).resolve().parent.parent / "data"
+CARPETA_SALIDA = Path(__file__).resolve().parent.parent / "data" / "raw"
 
 
 def valor_a_sql(valor):
@@ -38,6 +38,10 @@ def guardar_insert(tabla, columnas, filas, notas=()):
     lineas.append(f"SELECT setval(pg_get_serial_sequence('{tabla}', '{columnas[0]}'), "
                   f"(SELECT MAX({columnas[0]}) FROM {tabla}));")
 
+    CARPETA_SALIDA.mkdir(parents=True, exist_ok=True)
+    archivo = CARPETA_SALIDA / f"datos_{tabla}.sql"
+    archivo.write_text("\n".join(lineas) + "\n", encoding="utf-8")
+    print(f"Generado {archivo} ({len(filas)} filas)")
     CARPETA_SALIDA.mkdir(parents=True, exist_ok=True)
     archivo = CARPETA_SALIDA / f"datos_{tabla}.sql"
     archivo.write_text("\n".join(lineas) + "\n", encoding="utf-8")
