@@ -95,4 +95,4 @@ Cada carpeta tiene su propio `README.md` con lo que debe ir ahí y la convenció
 | Allan Andrey Jiménez Badilla | 2024080466 |
 | Sara María Segura González | 2023097391 |
 | Eliam Vives Vallejos | 2023172541 |
-| Sergio Mena Campos | _por completar_ |
+| Sergio Mena Campos | 2023395826|
