@@ -8,11 +8,11 @@
 
 -- Base de datos (solo se crea si no existe)
 \echo 'Creando base de datos...'
-SELECT 'CREATE DATABASE proyecto_1_bi'
-WHERE NOT EXISTS (SELECT 1 FROM pg_database WHERE datname = 'proyecto_1_bi')
+SELECT 'CREATE DATABASE proyecto_1_coopebi'
+WHERE NOT EXISTS (SELECT 1 FROM pg_database WHERE datname = 'proyecto_1_coopebi')
 \gexec
 
-\c proyecto_1_bi
+\c proyecto_1_coopebi
 
 -- Esquema
 \echo 'Creando esquema...'
