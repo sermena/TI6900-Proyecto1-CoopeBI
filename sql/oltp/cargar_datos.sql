@@ -13,20 +13,20 @@ SET search_path TO coopebi;
 \ir tablas.sql
 
 \echo 'Cargando datos...'
-\ir ../../data/datos_region.sql
-\ir ../../data/datos_ubicacion.sql
-\ir ../../data/datos_segmento.sql
-\ir ../../data/datos_cliente.sql
-\ir ../../data/datos_tipo_credito.sql
-\ir ../../data/datos_producto_credito.sql
-\ir ../../data/datos_agencia.sql
-\ir ../../data/datos_credito.sql
-\ir ../../data/datos_canal_pago.sql
-\ir ../../data/datos_rango_atraso.sql
-\ir ../../data/datos_tipo_comision.sql
-\ir ../../data/datos_pago.sql
-\ir ../../data/datos_interes.sql
-\ir ../../data/datos_comision.sql
-\ir ../../data/datos_morosidad.sql
+\ir ../../data/raw/datos_region.sql
+\ir ../../data/raw/datos_ubicacion.sql
+\ir ../../data/raw/datos_segmento.sql
+\ir ../../data/raw/datos_cliente.sql
+\ir ../../data/raw/datos_tipo_credito.sql
+\ir ../../data/raw/datos_producto_credito.sql
+\ir ../../data/raw/datos_agencia.sql
+\ir ../../data/raw/datos_credito.sql
+\ir ../../data/raw/datos_canal_pago.sql
+\ir ../../data/raw/datos_rango_atraso.sql
+\ir ../../data/raw/datos_tipo_comision.sql
+\ir ../../data/raw/datos_pago.sql
+\ir ../../data/raw/datos_interes.sql
+\ir ../../data/raw/datos_comision.sql
+\ir ../../data/raw/datos_morosidad.sql
 
 \echo 'Carga terminada.'
